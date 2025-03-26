@@ -12,29 +12,30 @@
     </header>
     <main>
       <article>
-        <p>
+        <p class="placeholder-p">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           rem consequatur exercitationem laboriosam a harum quis odio. Accusamus
           omnis id, explicabo eos, molestias quia tempora vero magni fugit
           voluptatum optio!
         </p>
       </article>
-      <form action="">
+      <form action="" id="search-county">
         <label for="country-code">Country Code: </label>
         <input
           type="text"
           name="country-code"
+          id="country-code"
           required
           placeholder="Input County Code Here"
         />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" id="submit-search" />
       </form>
     </main>
     <section>
-      <div>
+      <div id="details">
         <p>Image Will be appended here and details</p>
         <!-- div details class -->
-        <div>
+        <div id="span-details">
           <span>Detail one</span>
           <span>Detail two</span>
           <span>Detail three</span>
@@ -49,7 +50,7 @@
           <label for="comments">Let me hear from you:</label>
           <textarea placeholder="what is your  take?" name="comments" id="">
           </textarea>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" id="submit-comments" />
         </form>
       </div>
     </footer>
