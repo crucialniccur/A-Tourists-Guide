@@ -50,6 +50,16 @@ p {
   font-size: 1rem;
 }
 
+#submit-search {
+  padding: 10px 11px;
+  border-radius: 10px;
+  background: #f2fd7d;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 #span-details {
   display: flex;
   gap: 1rem;
