@@ -87,6 +87,9 @@ p {
 
 #span-details {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
   gap: 1rem;
 }
 #span-details span {
