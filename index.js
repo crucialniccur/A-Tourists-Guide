@@ -19,6 +19,9 @@ formSubmit.addEventListener("submit", (e) => {
     .then((res) => res.json())
     .then((counties) => {
       counties.forEach((county) => {
+        let matchCounty = counties.find(
+          (county) => county.name.toLowerCase() === userInput
+        );
         let countyName = county.name;
         let countyId = county.id;
         countyInput = countyId;
