@@ -10,4 +10,9 @@ let formSubmit = document.querySelector("#search-county");
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(countyInput.value);
+
+  // the fetch to get details
+  fetch("http://localhost:3008/counties")
+    .then((res) => res.json())
+    .then(console.log);
 });
