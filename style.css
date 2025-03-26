@@ -118,6 +118,11 @@ p {
   margin: auto;
 }
 
+#user-comment h4 {
+  font-size: 1.2rem;
+  color: #f2fd7d;
+}
+
 #user-comment form {
   display: flex;
   flex-direction: column;
