@@ -42,6 +42,14 @@ p {
   background: #333;
 }
 
+#country-code {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
 #span-details {
   display: flex;
   gap: 1rem;
