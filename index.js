@@ -5,6 +5,8 @@
 //declare variables at the global context here
 let countyInput = document.querySelector("#country-code");
 let formSubmit = document.querySelector("#search-county");
+let imageDiv = document.querySelector("#image");
+let spanDetailsDiv = document.querySelector("#span-details");
 
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
