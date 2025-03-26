@@ -14,20 +14,21 @@ let spanDetailsDiv = document.querySelector("#span-details");
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(countyInput.value);
+  fetch("http://localhost:3008/counties")
+    .then((res) => res.json())
+    .then((counties) => {
+      counties.forEach((county) => {
+        let countyName = county.name;
+        let countyId = county.id;
+        countyInput = countyId;
+        // let countyImgSrc  = county.img
+        //   console.log(county.name);
+        //   console.log(county.id);
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 });
 
 // the fetch to get details
-fetch("http://localhost:3008/counties")
-  .then((res) => res.json())
-  .then((counties) => {
-    counties.forEach((county) => {
-      let countyName = county.name;
-      let countyId = county.id;
-      // let countyImgSrc  = county.img
-      //   console.log(county.name);
-      //   console.log(county.id);
-    });
-  })
-  .catch((error) => {
-    console.error(error);
-  });
