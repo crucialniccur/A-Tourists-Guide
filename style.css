@@ -79,6 +79,7 @@ p {
 #image img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
   border: 1px solid grey;
   padding: 2px;
   border-radius: 20px;
