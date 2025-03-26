@@ -144,6 +144,10 @@ textarea {
 }
 #submit-comments {
   align-self: flex-end;
-  padding: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
+  font-weight: bold;
+  background-color: #f2fd7d;
 }
