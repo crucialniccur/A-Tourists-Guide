@@ -23,8 +23,6 @@ fetch("http://localhost:3008/counties")
     counties.forEach((county) => {
       let countyName = county.name;
       let countyId = county.id;
-      console.table(countyName);
-      console.table(countyId);
       // let countyImgSrc  = county.img
       //   console.log(county.name);
       //   console.log(county.id);
