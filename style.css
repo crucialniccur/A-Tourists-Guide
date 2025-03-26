@@ -48,9 +48,17 @@ p {
 #user-comment {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #user-comment form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#submit-comments {
+  align-self: flex-end;
+  padding: 0.5rem;
+  cursor: pointer;
 }
