@@ -2,6 +2,8 @@
 //   .then((res) => res.json())
 //   .then(console.log);
 
+// const { error } = require("console");
+
 //declare variables at the global context here
 let countyInput = document.querySelector("#country-code");
 let formSubmit = document.querySelector("#search-county");
@@ -12,9 +14,17 @@ let spanDetailsDiv = document.querySelector("#span-details");
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(countyInput.value);
-
-  // the fetch to get details
-  fetch("http://localhost:3008/counties")
-    .then((res) => res.json())
-    .then(console.log);
 });
+
+// the fetch to get details
+fetch("http://localhost:3008/counties")
+  .then((res) => res.json())
+  .then((counties) => {
+    counties.forEach((county) => {
+      console.log(county.name);
+      console.log(county.id);
+    });
+  })
+  .catch((error) => {
+    console.error(error);
+  });
