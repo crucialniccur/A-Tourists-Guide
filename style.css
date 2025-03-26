@@ -60,6 +60,10 @@ p {
   transition: 0.3s;
 }
 
+#submit-search:hover {
+  background: #e5e756;
+}
+
 #span-details {
   display: flex;
   gap: 1rem;
