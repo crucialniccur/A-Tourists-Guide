@@ -64,6 +64,11 @@ p {
   background: #e5e756;
 }
 
+#details {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 #span-details {
   display: flex;
   gap: 1rem;
