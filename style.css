@@ -44,3 +44,13 @@ p {
   border-radius: 20px;
   height: 200px;
 }
+
+#user-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-comment form {
+  display: flex;
+  flex-direction: row;
+}
