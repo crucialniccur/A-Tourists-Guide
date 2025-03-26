@@ -8,6 +8,9 @@ body {
 
 h1 {
   color: #f2fd7d;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1.5rem;
 }
 
 p {
