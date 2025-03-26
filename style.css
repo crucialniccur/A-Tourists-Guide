@@ -9,3 +9,9 @@ h1 {
 p {
   color: #c9c7ba;
 }
+
+#info {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 10px;
+}
