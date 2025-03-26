@@ -150,4 +150,9 @@ textarea {
   cursor: pointer;
   font-weight: bold;
   background-color: #f2fd7d;
+  transition: 0.3s;
+}
+
+#submit-comments:hover {
+  background-color: #e5e756;
 }
