@@ -13,6 +13,7 @@ let spanDetailsDiv = document.querySelector("#span-details");
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
+  let userInput = countyInput.value.trim().toLowerCase();
   console.log(countyInput.value);
   fetch("http://localhost:3008/counties")
     .then((res) => res.json())
