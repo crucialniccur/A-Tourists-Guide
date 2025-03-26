@@ -4,3 +4,10 @@
 
 //declare variables at the global context here
 let countyInput = document.querySelector("#country-code");
+let formSubmit = document.querySelector("#search-county");
+
+//add an event listener to the form
+formSubmit.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(countyInput.value);
+});
