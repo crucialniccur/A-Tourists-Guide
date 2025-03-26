@@ -101,6 +101,12 @@ p {
   transition: 0.3s;
   cursor: pointer;
 }
+
+#span-details span:hover {
+  background: #f2fd7d;
+  color: #333;
+}
+
 #user-comment {
   display: flex;
   flex-direction: column;
