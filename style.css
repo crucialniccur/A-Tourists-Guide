@@ -175,3 +175,7 @@ textarea {
 #submit-comments:hover {
   background-color: #e5e756;
 }
+
+hr {
+  width: 50%;
+}
