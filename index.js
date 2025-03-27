@@ -21,7 +21,7 @@ formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
   let userInput = countyInput.value.trim().toLowerCase();
   console.log(countyInput.value);
-  fetch("http://localhost:3008/counties")
+  fetch(fetchCountiesUrl)
     .then((res) => res.json())
     .then((counties) => {
       counties.forEach((county) => {
