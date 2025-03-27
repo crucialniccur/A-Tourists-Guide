@@ -179,3 +179,19 @@ textarea {
 hr {
   width: 50%;
 }
+
+#commentsDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+#submitComments {
+  display: flex;
+  margin-top: 10px;
+}
