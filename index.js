@@ -17,6 +17,7 @@ let mainResource = document.querySelector("#mainResource");
 let touristAttraction = document.querySelector("#touristAttraction");
 let imageSlideImg = document.querySelector("#image-slide img");
 let imageResult = document.querySelector("#imageResult");
+let countyName = document.querySelector("#countyName");
 
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
