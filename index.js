@@ -9,6 +9,10 @@ let countyInput = document.querySelector("#country-code");
 let formSubmit = document.querySelector("#search-county");
 let imageDiv = document.querySelector("#image");
 let spanDetailsDiv = document.querySelector("#span-details");
+let nameDetails = document.querySelector("#nameDetail");
+let funFact = document.querySelector("#funFact");
+let mainResource = document.querySelector("#mainResource");
+let touristAttraction = document.querySelector("#touristAttraction");
 
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
