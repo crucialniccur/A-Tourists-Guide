@@ -22,6 +22,13 @@ formSubmit.addEventListener("submit", (e) => {
         let matchCounty = counties.find(
           (county) => county.name.toLowerCase() === userInput
         );
+
+        if (matchCounty) {
+          spanDetailsDiv.textContent = `County : ${matchCounty.name}`;
+        } else {
+          spanDetailsDiv.textContent =
+            "County not found, check for errors in spellings ";
+        }
         let countyName = county.name;
         let countyId = county.id;
         countyInput = countyId;
