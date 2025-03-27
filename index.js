@@ -8,6 +8,7 @@
 let countyInput = document.querySelector("#country-code");
 let formSubmit = document.querySelector("#search-county");
 let imageDiv = document.querySelector("#image");
+let imageDivImage = document.querySelector("#image img");
 let spanDetailsDiv = document.querySelector("#span-details");
 let nameDetails = document.querySelector("#nameDetail");
 let funFact = document.querySelector("#funFact");
@@ -49,4 +50,16 @@ formSubmit.addEventListener("submit", (e) => {
     });
   //clear the form
   formSubmit.reset();
+});
+
+//add an eventlistener, a mouseover and mouse leave on the image
+imageDiv.addEventListener("mouseover", (e) => {
+  // console.log(e);
+  imageDivImage.style.transform = "scale(1.1)";
+  // imageDiv.style.transform = "scale(1.1)";
+});
+
+imageDivImage.addEventListener("mouseleave", () => {
+  imageDivImage.style.transform = "scale(1)";
+  // imageDiv.style.transform = "scale(1)";
 });
