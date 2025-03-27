@@ -6,6 +6,13 @@ body {
   padding: 0;
 }
 
+/* the info-section elements styles */
+#info-section {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
 h1 {
   color: #f2fd7d;
   text-align: center;
