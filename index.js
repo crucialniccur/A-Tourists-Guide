@@ -5,6 +5,7 @@
 // const { error } = require("console");
 
 //declare variables at the global context here
+let fetchCountiesUrl = "https://tourist-backend-w8qc.onrender.com/api/counties";
 let countyInput = document.querySelector("#country-code");
 let formSubmit = document.querySelector("#search-county");
 let imageDiv = document.querySelector("#image");
