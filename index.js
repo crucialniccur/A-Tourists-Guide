@@ -47,6 +47,6 @@ formSubmit.addEventListener("submit", (e) => {
     .catch((error) => {
       console.error(error);
     });
+  //clear the form
+  formSubmit.reset();
 });
-
-// the fetch to get details
