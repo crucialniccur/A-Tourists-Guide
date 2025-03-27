@@ -15,6 +15,8 @@ let nameDetails = document.querySelector("#nameDetail");
 let funFact = document.querySelector("#funFact");
 let mainResource = document.querySelector("#mainResource");
 let touristAttraction = document.querySelector("#touristAttraction");
+let imageSlideImg = document.querySelector("#image-slide img");
+let imageResult = document.querySelector("#imageResult");
 
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
@@ -34,6 +36,8 @@ formSubmit.addEventListener("submit", (e) => {
           funFact.textContent = `${matchCounty.fun_fact}`;
           mainResource.textContent = `${matchCounty.main_resource}`;
           touristAttraction.textContent = `${matchCounty.tourist_attraction}`;
+          imageResult.src = `${matchCounty.imgUrl}`;
+          // imageSlideImg.src = `${matchCounty.imgUrl}`;
         } else {
           spanDetailsDiv.textContent =
             "County not found, check for errors in spellings ";
