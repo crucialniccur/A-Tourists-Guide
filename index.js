@@ -17,7 +17,6 @@ let mainResource = document.querySelector("#mainResource");
 let touristAttraction = document.querySelector("#touristAttraction");
 let imageSlideImg = document.querySelector("#image-slide img");
 let imageResult = document.querySelector("#imageResult");
-let countyName = document.querySelector("#countyName");
 
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
@@ -38,6 +37,8 @@ formSubmit.addEventListener("submit", (e) => {
           mainResource.textContent = `${matchCounty.main_resource}`;
           touristAttraction.textContent = `${matchCounty.tourist_attraction}`;
           imageResult.src = `${matchCounty.imgUrl}`;
+          let countyName = document.querySelector("#countyName");
+          countyName.textContent = `${matchCounty.name}`;
           // imageSlideImg.src = `${matchCounty.imgUrl}`;
         } else {
           spanDetailsDiv.textContent =
