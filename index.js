@@ -28,7 +28,10 @@ formSubmit.addEventListener("submit", (e) => {
         );
 
         if (matchCounty) {
-          spanDetailsDiv.textContent = `County : ${matchCounty.name}`;
+          nameDetails.textContent = `County : ${matchCounty.name}`;
+          funFact.textContent = `${matchCounty.fun_fact}`;
+          mainResource.textContent = `${matchCounty.main_resource}`;
+          touristAttraction.textContent = `${matchCounty.tourist_attraction}`;
         } else {
           spanDetailsDiv.textContent =
             "County not found, check for errors in spellings ";
