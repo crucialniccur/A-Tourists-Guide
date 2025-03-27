@@ -41,7 +41,7 @@ formSubmit.addEventListener("submit", (e) => {
         let countyName = county.name;
         let countyId = county.id;
         countyInput = countyId;
-        // let countyImgSrc  = county.img
+        // let countyImgSrc  = county.imgUrl
         //   console.log(county.name);
         //   console.log(county.id);
       });
