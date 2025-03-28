@@ -77,4 +77,10 @@ let commentInput = document.querySelector("#commentInput");
 
 commentsForm.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  //new comment logic
+  let newComment = commentInput.value.trim();
+  if (!newComment) {
+    return alert("Please input a comment in the field");
+  }
 });
