@@ -194,4 +194,12 @@ hr {
 #submitComments {
   display: flex;
   margin-top: 10px;
+  align-self: flex-end;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f2fd7d;
+  transition: 0.3s;
 }
