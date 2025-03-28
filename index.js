@@ -41,13 +41,19 @@ formSubmit.addEventListener("submit", (e) => {
 
         if (matchCounty) {
           nameDetails.textContent = `County : ${matchCounty.name}`;
-          funFact.textContent = `A fun fact is: ${matchCounty.fun_fact}`;
+          funFact.textContent = `A fun fact : ${matchCounty.fun_fact}`;
           mainResource.textContent = `The county's main resource is: ${matchCounty.main_resource}`;
           touristAttraction.textContent = `A place of interset: ${matchCounty.tourist_attraction}`;
           imageResult.src = `${matchCounty.imgUrl}`;
           let countyName = document.querySelector("#countyName");
           countyName.textContent = `${matchCounty.name}`;
           commentSpan.textContent = `User comments are : ${matchCounty.comments}`;
+
+          // display spans
+          let detailsSpans = document.querySelectorAll("#span-details span");
+          detailsSpans.forEach((span) => {
+            span.style.display = "inline";
+          });
           // imageSlideImg.src = `${matchCounty.imgUrl}`;
         } else {
           spanDetailsDiv.textContent =
