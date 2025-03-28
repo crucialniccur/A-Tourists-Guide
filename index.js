@@ -19,6 +19,9 @@ let imageSlideImg = document.querySelector("#image-slide img");
 let imageResult = document.querySelector("#imageResult");
 let commentSpan = document.querySelector("#comments");
 
+//span details div  spans before clicking
+let detailsSpans = document.querySelector("#span-details span");
+
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
