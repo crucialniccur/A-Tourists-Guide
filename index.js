@@ -33,9 +33,9 @@ formSubmit.addEventListener("submit", (e) => {
 
         if (matchCounty) {
           nameDetails.textContent = `County : ${matchCounty.name}`;
-          funFact.textContent = `${matchCounty.fun_fact}`;
-          mainResource.textContent = `${matchCounty.main_resource}`;
-          touristAttraction.textContent = `${matchCounty.tourist_attraction}`;
+          funFact.textContent = `A fun fact is: ${matchCounty.fun_fact}`;
+          mainResource.textContent = `The county's main resource is: ${matchCounty.main_resource}`;
+          touristAttraction.textContent = `A place of interset: ${matchCounty.tourist_attraction}`;
           imageResult.src = `${matchCounty.imgUrl}`;
           let countyName = document.querySelector("#countyName");
           countyName.textContent = `${matchCounty.name}`;
