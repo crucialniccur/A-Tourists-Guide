@@ -83,4 +83,42 @@ commentsForm.addEventListener("submit", (e) => {
   if (!newComment) {
     return alert("Please input a comment in the field");
   }
+
+  //country name
+  let selectedCounty = document.querySelector("#countyName").textContent.trim();
+  if (!selectedCounty) return alert("Please search for a county first.");
+
+  //fetch counties
+  fetch(fetchCountiesUrl)
+    .then((res) => res.json())
+    .then((counties) => {
+      let matchCounty = counties.find(
+        (county) => county.name.toLowerCase() === selectedCounty.toLowerCase()
+      );
+
+      if (!matchCounty) {
+        alert("County not found in the database.");
+        return;
+      }
+
+      let countyId = matchCounty.id;
+      let updatedComments = [...(matchCounty.comments || []), newComment];
+
+      // PATCH request to update comments
+      fetch(`${fetchCountiesUrl}/${countyId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ comments: updatedComments }),
+      })
+        .then((res) => res.json())
+        .then((updatedCounty) => {
+          console.log("Updated County:", updatedCounty);
+          alert("Comment added successfully!");
+          commentInput.value = ""; // Clear input field
+        })
+        .catch((error) => console.error("Error updating comment:", error));
+    })
+    .catch((error) => console.error("Error fetching counties:", error));
 });
