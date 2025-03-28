@@ -74,3 +74,7 @@ imageDivImage.addEventListener("mouseleave", () => {
 // select form and the inputs
 let commentsForm = document.querySelector("#commentsForm");
 let commentInput = document.querySelector("#commentInput");
+
+commentsForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
