@@ -20,7 +20,11 @@ let imageResult = document.querySelector("#imageResult");
 let commentSpan = document.querySelector("#comments");
 
 //span details div  spans before clicking
-let detailsSpans = document.querySelector("#span-details span");
+let detailsSpans = document.querySelectorAll("#span-details span");
+// make each span invinsible
+detailsSpans.forEach((span) => {
+  span.style.display = "none";
+});
 
 //add an event listener to the form
 formSubmit.addEventListener("submit", (e) => {
