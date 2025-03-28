@@ -40,7 +40,7 @@ formSubmit.addEventListener("submit", (e) => {
           imageResult.src = `${matchCounty.imgUrl}`;
           let countyName = document.querySelector("#countyName");
           countyName.textContent = `${matchCounty.name}`;
-          commentSpan.textContent = matchCounty.comments;
+          commentSpan.textContent = `User comments are : ${matchCounty.comments}`;
           // imageSlideImg.src = `${matchCounty.imgUrl}`;
         } else {
           spanDetailsDiv.textContent =
