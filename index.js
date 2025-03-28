@@ -70,3 +70,7 @@ imageDivImage.addEventListener("mouseleave", () => {
   imageDivImage.style.transform = "scale(1)";
   // imageDiv.style.transform = "scale(1)";
 });
+
+// select form and the inputs
+let commentsForm = document.querySelector("#commentsForm");
+let commentInput = document.querySelector("#commentInput");
