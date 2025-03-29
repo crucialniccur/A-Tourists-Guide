@@ -58,7 +58,7 @@ formSubmit.addEventListener("submit", (e) => {
           //   span.style.display = "inline";
           // });
           // make the details div visible
-          details.style.display = "inline";
+          details.style.display = "flex";
 
           // imageSlideImg.src = `${matchCounty.imgUrl}`;
         } else {
