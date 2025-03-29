@@ -125,6 +125,7 @@ p {
   justify-content: center;
   flex: 2;
   gap: 1rem;
+  padding: 5px;
 }
 
 #span-details span {
