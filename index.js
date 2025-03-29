@@ -21,6 +21,9 @@ let commentSpan = document.querySelector("#comments");
 
 //span details div  spans before clicking
 let detailsSpans = document.querySelectorAll("#span-details span");
+// make details div invinsible before user input
+let details = document.querySelector("#details");
+details.style.display = "none";
 // make each span invinsible
 // detailsSpans.forEach((span) => {
 //   span.style.display = "none";
@@ -45,15 +48,18 @@ formSubmit.addEventListener("submit", (e) => {
           mainResource.textContent = `The county's main resource is: ${matchCounty.main_resource}`;
           touristAttraction.textContent = `A place of interset: ${matchCounty.tourist_attraction}`;
           imageResult.src = `${matchCounty.imgUrl}`;
-          let countyName = document.querySelector("#countyName");
-          countyName.textContent = `${matchCounty.name}`;
+          // let countyName = document.querySelector("#countyName");
+          // countyName.textContent = `${matchCounty.name}`;
           commentSpan.textContent = `User comments are : ${matchCounty.comments}`;
 
           // display spans
-          let detailsSpans = document.querySelectorAll("#span-details span");
-          detailsSpans.forEach((span) => {
-            span.style.display = "inline";
-          });
+          // let detailsSpans = document.querySelectorAll("#span-details span");
+          // detailsSpans.forEach((span) => {
+          //   span.style.display = "inline";
+          // });
+          // make the details div visible
+          details.style.display = "inline";
+
           // imageSlideImg.src = `${matchCounty.imgUrl}`;
         } else {
           spanDetailsDiv.textContent =
