@@ -87,15 +87,26 @@ p {
 }
 
 #details {
-  text-align: center;
-  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  padding: 20px;
+  border: 2px solid #f2fd7d;
+  border-radius: 20px;
+  background: #252527;
+  box-shadow: 0 4px 8px rgba(242, 253, 125, 0.2);
 }
 
 #image {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  flex: 1;
 }
 
 #image img {
@@ -109,24 +120,32 @@ p {
 
 #span-details {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  flex: 2;
   gap: 1rem;
 }
 
 #span-details span {
-  border: 1px solid #f2fd7d;
-  border-radius: 10px;
-  padding: 10px;
+  border: 2px solid #f2fd7d;
+  border-radius: 15px;
+  padding: 15px;
   background: #333;
   transition: 0.3s;
   cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(242, 253, 125, 0.3);
 }
 
 #span-details span:hover {
   background: #f2fd7d;
   color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(242, 253, 125, 0.5);
 }
 
 #user-comment {
