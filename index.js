@@ -86,14 +86,68 @@ imageDivImage.addEventListener("mouseleave", () => {
   // imageDiv.style.transform = "scale(1)";
 });
 
-// select form and the inputs
+// // select form and the inputs
+// let commentsForm = document.querySelector("#commentsForm");
+// let commentInput = document.querySelector("#commentInput");
+
+// commentsForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   //new comment logic
+//   let newComment = commentInput.value.trim();
+//   if (!newComment) {
+//     return alert("Please input a comment in the field");
+//   }
+
+//   //country name
+//   let selectedCounty = document.querySelector("#countyName").textContent.trim();
+//   if (!selectedCounty) return alert("Please search for a county first.");
+
+//fetch counties
+//   fetch(fetchCountiesUrl)
+//     .then((res) => res.json())
+//     .then((counties) => {
+//       let matchCounty = counties.find(
+//         (county) => county.name.toLowerCase() === selectedCounty.toLowerCase()
+//       );
+
+//       if (!matchCounty) {
+//         alert("County not found in the database.");
+//         return;
+//       }
+
+//       let countyId = matchCounty.id;
+//       let updatedComments = [...(matchCounty.comments || []), newComment];
+
+//       // PATCH request to update comments
+//       fetch(`${fetchCountiesUrl}/${countyId}`, {
+//         method: "PATCH",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify({ comments: updatedComments }),
+//       })
+//         .then((res) => res.json())
+//         .then((updatedCounty) => {
+//           console.log("Updated County:", updatedCounty);
+//           alert("Comment added successfully!");
+//           commentInput.value = ""; // Clear input field
+//         })
+//         .catch((error) => console.error("Error updating comment:", error));
+//     })
+//     .catch((error) => console.error("Error fetching counties:", error));
+// });
+
+// implementing post to post comments form users
+// grab the comment input and form
 let commentsForm = document.querySelector("#commentsForm");
 let commentInput = document.querySelector("#commentInput");
 
+// event listener to the form
 commentsForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  //new comment logic
+  // new comment logic
   let newComment = commentInput.value.trim();
   if (!newComment) {
     return alert("Please input a comment in the field");
@@ -102,38 +156,4 @@ commentsForm.addEventListener("submit", (e) => {
   //country name
   let selectedCounty = document.querySelector("#countyName").textContent.trim();
   if (!selectedCounty) return alert("Please search for a county first.");
-
-  //fetch counties
-  fetch(fetchCountiesUrl)
-    .then((res) => res.json())
-    .then((counties) => {
-      let matchCounty = counties.find(
-        (county) => county.name.toLowerCase() === selectedCounty.toLowerCase()
-      );
-
-      if (!matchCounty) {
-        alert("County not found in the database.");
-        return;
-      }
-
-      let countyId = matchCounty.id;
-      let updatedComments = [...(matchCounty.comments || []), newComment];
-
-      // PATCH request to update comments
-      fetch(`${fetchCountiesUrl}/${countyId}`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ comments: updatedComments }),
-      })
-        .then((res) => res.json())
-        .then((updatedCounty) => {
-          console.log("Updated County:", updatedCounty);
-          alert("Comment added successfully!");
-          commentInput.value = ""; // Clear input field
-        })
-        .catch((error) => console.error("Error updating comment:", error));
-    })
-    .catch((error) => console.error("Error fetching counties:", error));
 });
