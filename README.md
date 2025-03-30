@@ -1,14 +1,15 @@
 # A-Tourists-Guide
 
 ### What is it?
-This is a web application, built to <span style="background:#fdbfff">help guide tourists</span> and help them choose where to visit.
-The <span style="background:#affad1">user types in the county name in a search input field</span> and on submitting, an image and some info relevant to it are displayed for the user.
+This is a light web application, built to help guide tourists and help them choose where to visit.
+The user types in the county name in a search input field and on submitting, an image and some info relevant to it are displayed for the user.
+It aims to help user choose a place of interest.
 
 ---
 ### Technologies used
-The backend id hosted on <span style="background:#affad1">render</span> while the <span style="background:#d3f8b6">live page</span> website is hosted in [githubpages](https://crucialniccur.github.io/A-Tourists-Guide/).
+The backend id hosted on render while the live page website is hosted in [githubpages](https://crucialniccur.github.io/A-Tourists-Guide/).
 
-<span style="background:#fdbfff">Here is the link to the live page</span> ;
+Here is the link to the live page ;
 	 [Link to live page](https://crucialniccur.github.io/A-Tourists-Guide/).
 
 ---
@@ -16,7 +17,7 @@ The backend id hosted on <span style="background:#affad1">render</span> while th
 The server contains a list of the counties, each with a unique id, a name, a fun fact and a recommended tourist site.
 
 For now, the data is not complete, meaning not all counties are present but that will change.
-The <span style="background:#d4b106">currently available</span> counties to search are : 
+The currently available counties to search are : 
 
 ```
 # List of Kenyan Counties
