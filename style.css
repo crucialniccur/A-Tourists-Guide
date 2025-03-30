@@ -99,6 +99,7 @@ p {
   border-radius: 20px;
   background: #252527;
   box-shadow: 0 4px 8px rgba(242, 253, 125, 0.2);
+  flex-wrap: wrap;
 }
 
 #image {
@@ -116,6 +117,7 @@ p {
   border: 1px solid grey;
   padding: 2px;
   border-radius: 20px;
+  flex-wrap: wrap;
 }
 
 #span-details {
